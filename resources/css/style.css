@@ -12,6 +12,7 @@ height: 4rem;
 width: 100%;
 background-color: black;
 color: white;
+font-family: "noto sans"
 }
 
 header .head {
@@ -61,10 +62,28 @@ header .head {
   text-align: center;
   font-family: "Fjalla one";
   font-size: 3rem;
+  background-color: black;
+  color: white;
+  flex-grow: 1;
+  opacity: 0.5;
 
 
 }
 
 .hero_text span {
 
+}
+
+.Description {
+  background-color: black;
+  color: white;
+  display: flex;
+  padding-top: 1.5rem;
+  font-family: "noto sans";
+  justify-content: space-between;
+}
+
+.Description_container {
+  text-align: center;
+  max-width: 30%;
 }
