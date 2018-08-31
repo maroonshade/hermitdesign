@@ -1,6 +1,39 @@
 html {
   font-size: 16px;
   font-family: "Helvetica", sans-serif;
+  background-color: black;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+a:hover {
+  color: white;
+}
+
+a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 /*header*/
@@ -102,6 +135,35 @@ header .head {
   opacity: 0.5;
 }
 
+/*About page nav link*/
+
+.click {
+
+}
+
+.click h1 {
+  display: flex;
+  justify-content: center;
+  font-family: "Fjalla one";
+  font-size: 3rem;
+  color: white;
+}
+
+.click a {
+  color: white;
+  opacity: 0.5;
+  transition-duration: 0.75s;
+  transition-delay: 150ms;
+}
+
+ .click a:visited {
+  color: white;
+}
+
+.click a:hover {
+  opacity: 1;
+  font-size: 3.5rem;
+}
 
 
 /*Description Container*/
@@ -118,6 +180,17 @@ header .head {
 .Description_container {
   text-align: center;
   max-width: 30%;
+  border-left: solid white;
+  border-right: solid white;
+  transition-duration: 0.75s;
+  transition-delay: 150ms;
+}
+
+.Description_container:hover {
+  border-left: none;
+  border-right: none;
+  border-top: solid white;
+  border-bottom: solid white;
 }
 
 .Description_container h1 {
@@ -125,6 +198,20 @@ header .head {
   padding: 1.5rem 0;
 }
 
+/*about page description*/
+
+.description1 {
+  display: flex;
+  justify-content: center;
+  margin: 8rem 0;
+  background-color: white;
+  scroll-behavior: smooth;
+}
+
+.desimg img {
+  max-width: 100%;
+  height: 10rem;
+}
 
 /*Footer*/
 
@@ -156,7 +243,7 @@ footer {
 
 .footer_nav li {
   margin: 0 0.5rem;
-  border-bottom: solid white 1.5px;
+
 }
 
 .copyright {
