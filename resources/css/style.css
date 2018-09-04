@@ -257,3 +257,48 @@ footer {
 .copyright span {
   color: #5b5c5d;
 }
+
+/* Contact title */
+
+.contact_title h1 {
+  text-align: center;
+  font-family: "fjalla one";
+  color: white;
+  font-size: 3rem;
+  padding: 4rem 0;
+
+}
+
+.contact_form {
+  display: flex;
+  justify-content: center;
+}
+
+.form-control {
+  width: 600px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+input {
+  height: 45px;
+}
+
+form .submit {
+  font-family: "fjalla one";
+  border-color: transparent;
+  color: white;
+  opacity: 0.5;
+  transition-duration: 0.75s;
+  transition-delay: 150ms;
+}
+
+form .submit:hover {
+  opacity: 1;
+  font-size: 2rem;
+}

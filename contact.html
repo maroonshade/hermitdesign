@@ -29,26 +29,26 @@
 
     </header>
 
-    <div class="hero1">
-      <div class="hero_text1">
-        <h1>Why Hermit?</h1>
-        <span></span>
-      </div>
+    <div class="contact_title">
+      <h1>Contact us</h1>
+      <h2>Leave a message and let us know what you're looking for<br>
+        We'll get back to you as soon as possible.
+      </h2>
     </div>
 
-    <nav class="click">
-      <h1><a href="#describe">Click Here</a></h1>
-    </nav>
+    <div class="contact_form">
+      <form id="contact_form" method="post" action="contact-form-handler.php">
+        <input name="Name" type="text" class="form-control" placeholder="Your Name" required>
+        <br>
+        <input name="email" type="email" class="form-control" placeholder="Your E-mail" required>
+        <br>
+        <textarea name="message" class="form-control" placeholder="Message" row="4" required>
+        </textarea>
+        <br>
+        <input type="submit" class="form-control submit" value="SEND MESSAGE">
+      </form>
 
-
-    <div id="describe">
-        <div class="description1">
-          <div class="desimg">
-            <img src="resources/images/newlampblack.png" alt="">
-          </div>
-        </div>
     </div>
-
 
   </body>
 </html>
