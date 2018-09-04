@@ -93,6 +93,7 @@ header .head {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 3rem;
 }
 
 .hero_text {
@@ -172,7 +173,7 @@ header .head {
   background-color: black;
   color: white;
   display: flex;
-  padding: 1.5rem 10rem;
+  padding: 4rem 10rem;
   font-family: "noto sans";
   justify-content: space-between;
 }
