@@ -173,6 +173,7 @@ header .head {
   background-color: black;
   color: white;
   display: flex;
+  flex-wrap: wrap;
   padding: 4rem 10rem;
   font-family: "noto sans";
   justify-content: space-between;
@@ -181,18 +182,13 @@ header .head {
 .Description_container {
   text-align: center;
   max-width: 30%;
-  border-left: solid white;
-  border-right: solid white;
+
   transition-duration: 0.75s;
   transition-delay: 150ms;
+  padding-top: 2rem;
 }
 
-.Description_container:hover {
-  border-left: none;
-  border-right: none;
-  border-top: solid white;
-  border-bottom: solid white;
-}
+
 
 .Description_container h1 {
   font-size: 1.5rem;
