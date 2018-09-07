@@ -47,7 +47,9 @@ height: 4rem;
 width: 100%;
 background-color: black;
 color: white;
-font-family: "noto sans"
+font-family: "noto sans";
+position: fixed;
+z-index: 1;
 }
 
 header .head {
@@ -195,6 +197,17 @@ header .head {
   padding: 1.5rem 0;
 }
 
+@media only screen and (max-width: 560px) {
+  .Description {
+    display: block;
+    padding: 0rem;
+  }
+  .Description_container {
+    max-width: 100%;
+  }
+
+}
+
 /*about page description*/
 
 .description1 {
@@ -297,4 +310,38 @@ form .submit {
 form .submit:hover {
   opacity: 1;
   font-size: 2rem;
+}
+
+
+.second_main {
+  display: flex;
+  background-image: url("../images/pexels.jpeg");
+  background-position: center;
+  background-size: cover;
+  height: 32rem;
+  opacity: 0.5;
+  justify-content: flex-end;
+
+}
+
+.hut_flexcontainer {
+  height: 5rem;
+  display: inline-block;
+  margin: 10rem;
+  padding: 1.5rem 5rem;
+  opacity: 0.6;
+  background-color: black;
+}
+
+.hut_text {
+  color: white;
+  opacity: 1;
+  font-family: "fjalla one";
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 560px) {
+  .second_main {
+    justify-content: center;
+  }
 }
